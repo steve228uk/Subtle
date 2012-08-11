@@ -1,0 +1,353 @@
+/*
+* @theme Subtle
+* @author Cocoon Design
+* @copyright 2012 (C) Cocoon Design
+* @description A clen and modern theme for Candy
+* @colors Global-bg,Global-heading,Global-link,Nav-inactive,Nav-active
+*/
+
+/* Imports */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat|Vollkorn:400italic,700italic,400,700);
+
+/* Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html{
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Automatically clear elements for standards-compliant browsers */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* Trigger has-layout for IE compatibility */
+.clearfix {
+	zoom: 1;
+}
+
+/* Overrides */
+
+a:link, a:visited{
+	color: #8b8572;
+	text-decoration: underline;
+}
+
+a:hover, a:active{
+	text-decoration: none;
+}
+
+.heading{
+	color: #d2cdbe !important;
+}
+
+/* Global Layout */
+
+body{
+	background: #dcd7c7;
+	font-family: 'Vollkorn', serif;
+	color: #8b8572;
+}
+
+#container{
+	background: #fff;
+	width: 825px;
+	padding: 55px 100px;
+	margin: auto;
+}
+
+.content{
+	padding: 30px 0 0;
+	border-top: 1px solid #dcd7c7;
+	-webkit-box-shadow: inset 0 2px 0 rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0 2px 0 rgba(0,0,0,0.1);
+	box-shadow: inset 0 2px 0 rgba(0,0,0,0.1);
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+/* 2col Layout */
+
+.left-col{
+	width: 515px;
+	float: left;
+}
+
+.right-col{
+	width: 270px;
+	float: right;
+}
+
+.bottom{
+	margin: 30px 0 10px;
+}
+
+/* Header */
+
+#page-header{
+	padding: 0 0 40px;
+}
+
+.logo{
+	font: 1.8em 'Montserrat', sans-serif;
+	text-decoration: none !important;
+	float: left;
+}
+
+/* Navigation */
+
+.nav{
+	float: right;
+	margin: 13px 0 0;
+}
+
+.nav a:link, .nav a:visited{
+	text-decoration: none;
+	color: #d2cdbe;
+}
+
+.nav a:hover{
+	text-decoration: underline;
+}
+
+.nav .active-page a:link, .nav .active-page a:visited{
+	color: #8b8572;
+}
+
+.nav li{
+	display: inline;
+	margin: 0 0 0 20px;
+}
+
+/* Footer */
+
+#page-footer{
+	background: #f0eee9;
+	padding: 30px 25px;
+	margin: 30px 0 0;
+	position: relative;
+}
+
+.candy-logo{
+	background: url(../images/candy-logo.png) center right no-repeat;
+	padding: 10px 80px 10px 0;
+	position: absolute;
+	text-decoration: none;
+	right: 25px;
+	top: 20px;
+}
+
+/* Hero Images */
+
+.hero-images{
+	position: relative;
+	margin: 0 0 20px;
+}
+
+.caption{
+	background: rgba(255,255,255,0.5);
+	font: 1.8em 'Montserrat', sans-serif;
+	color: #fff;
+	padding: 20px 30px;
+	position: absolute;
+	bottom: 18px;
+	right: 15px;
+}
+
+/* Typography */
+
+h1{
+	font: 2.2em 'Montserrat', sans-serif;
+	color: #d2cdbe;
+}
+
+h2{
+	font: 1.8em 'Montserrat', sans-serif;
+	color: #d2cdbe;
+}
+
+h3{
+	font: 1.3em 'Montserrat', sans-serif;
+	color: #d2cdbe;
+	border-bottom: 1px solid #dcd7c7;
+	-webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+	padding: 0 0 5px;
+	margin: 0 0 15px;
+}
+
+h4{
+	font: 1.2em 'Montserrat', sans-serif;
+	color: #d2cdbe;
+	margin: 0 0 15px;
+}
+
+h2 a:link, h2 a:visited{
+	color: #d2cdbe;
+	text-decoration: none;
+}
+
+h2 a:hover, h2 a:active{
+	text-decoration: underline;
+}
+
+.content p{
+	padding: 15px 0 0;
+	line-height: 1.5;
+}
+
+.content ul{
+	list-style: disc;
+	list-style-position: inside;
+	margin: 0 0 15px;
+}
+
+.content li{
+	margin: 0 0 5px;
+}
+
+.content ol{
+	list-style: decimal;
+	list-style-position: inside;
+	margin: 0 0 15px;
+}
+
+.right-col ul, .right-col ol, .category-list{
+	list-style: none !important;
+	margin: 0 !important;
+}
+
+pre{
+	background: #eee;
+	border: 1px dashed #ccc;
+	font-family: "Courier New", Courier, mono;
+	padding: 5px;
+	border-radius: 3px;
+	color: #333;
+	margin: 0 0 20px;
+	overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+blockquote{
+	font: 1.2em 'Montserrat', sans-serif;
+	float: right;
+	padding: 5px;
+	margin: 0 0 0 15px;
+	width: 180px;
+	border-left: 3px solid #d2cdbe;
+}
+
+/* Twitter Plugin */
+
+.latest-tweets{
+	list-style: none;
+	margin: 15px 0 0;
+}
+
+.latest-tweets li{
+	line-height: 1.5;
+	margin: 0 0 10px;
+}
+
+/* Search Form */
+
+#search-form{
+	margin: 0 0 15px;
+}
+
+#search-form input{
+	background: #f7f6f6;
+	border: none;
+	width: 254px;
+	padding: 8px;
+	font: 1.2em 'Vollkorn', serif;
+	color: #999;
+	outline: none;
+}
+
+/* Blog Styles */
+
+.category-list{
+	float: left;
+}
+
+.date{
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+.categories{
+	margin: 0 0 25px;
+}
+
+.bloglink.next{
+	float: right;
+}
+
+.bloglink.prev{
+	float: left;
+}
