@@ -355,3 +355,7 @@ blockquote{
 article{
 	margin: 0 0 20px;
 }
+
+#disqus_thread{
+	color: #000;
+}
