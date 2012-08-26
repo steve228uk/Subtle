@@ -13,6 +13,6 @@
 <body>
 	<div id="container">
 		<header id="page-header" class="clearfix">
-			<a href="<?php echo URL_PATH ?>" title="Home" class="logo heading"><?php echo $Candy['options']->getOption('site_title') ?></a>
+			<a href="<?php echo URL_PATH ?>" title="Home" class="logo heading"><?php echo Candy::Options('site_title') ?></a>
 			<?php theNav() ?>
 		</header>
